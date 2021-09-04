@@ -1,0 +1,50 @@
+.filter {  
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  
+&__item {
+    margin-right: 8px;
+    &:nth-child(-n+3) {
+      margin-bottom: 15px;
+    }
+   
+    @media screen and (min-width: 768px) {
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:nth-child(-n+3) {
+        margin-bottom: 0;
+      }
+    }
+  }   
+}
+ .filter-link-blue {
+  background-color: var(--special-color);
+  color: var(--main-color);
+}
+ .filter button {
+    padding: 6px 22px;
+    background-color: var(--bg-team-filter);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: inherit;
+    line-height: 1.625;
+    border: 0;
+    border-radius: 4px;
+    color:var(--main-text-color);
+    transition: color var(--transition-duration) var(--timing-function), background-color var(--transition-duration) var(--timing-function), box-shadow var(--transition-duration) var(--timing-function);
+    
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background: var(--special-color);
+        color:var(--main-color);
+        box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+}
