@@ -1,0 +1,115 @@
+ .hero {
+   padding: 118px 0;
+
+   @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
+
+   
+   background-position: center;
+   background-repeat: no-repeat;
+   margin: auto;
+   
+ 
+   background-image: linear-gradient(
+       rgba(47, 48, 58, 0.8),
+       rgba(47, 48, 58, 0.8)
+     ),
+     url('../images/mobile-header-1x.jpg');
+ 
+   @media screen and (min-device-pixel-ratio: 2),
+     screen and (min-resolution: 192dpi),
+     screen and (min-resolution: 2dppx),
+     screen and (min-width: 320px) {
+     background-image: linear-gradient(
+         rgba(47, 48, 58, 0.8),
+         rgba(47, 48, 58, 0.8)
+       ),
+       url('../images/mobile-header-2x.jpg');
+   }
+ 
+   @media screen and (min-width: 768px) {
+     background-image: linear-gradient(
+         rgba(47, 48, 58, 0.8),
+         rgba(47, 48, 58, 0.8)
+       ),
+       url('../images/tablet-header-1x.jpg');
+ 
+     @media screen and (min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi),
+       screen and (min-resolution: 2dppx),
+       screen and (min-width: 768px) {
+       background-image: linear-gradient(
+           rgba(47, 48, 58, 0.8),
+           rgba(47, 48, 58, 0.8)
+         ),
+         url('../images/tablet-header-2x.jpg');
+     }
+   }
+ 
+   @media screen and (min-width: 1200px) {
+     background-image: linear-gradient(
+         rgba(47, 48, 58, 0.8),
+         rgba(47, 48, 58, 0.8)
+       ),
+       url('../images/desktop-header-1x.jpg');
+ 
+     @media screen and (min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi),
+       screen and (min-resolution: 2dppx),
+       screen and (min-width: 1200px) {
+       background-image: linear-gradient(
+           rgba(47, 48, 58, 0.8),
+           rgba(47, 48, 58, 0.8)
+         ),
+         url('../images/desktop-header-2x.jpg');
+     }
+   }
+ 
+   &__title {
+     margin-top: 0;
+     margin-bottom: 30px;
+ 
+     font-weight: 900;
+     text-align: center;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+ 
+     color: #fff;
+ 
+     @media screen and (max-width: 1199px) {
+       font-size: 26px;
+       line-height: 1.6;
+     }
+ 
+     @media screen and (min-width: 1200px) {
+       font-size: 44px;
+       line-height: 1.36;
+     }
+   }
+ }
+ 
+ .hero .container {
+   text-align: center;
+ }
+ .hero__button {
+   display: inline-block;
+   padding: 10px 32px;
+   min-width: 200px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.9;
+   letter-spacing: 0.06em;
+   border: none;
+   border-radius: 4px;
+   text-decoration: none;
+   color: #fff;
+   background-color: #2196f3;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   &:hover,
+   &:focus {
+        cursor: pointer;
+    }
+ }
