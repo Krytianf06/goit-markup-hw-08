@@ -1,0 +1,33 @@
+.footer {
+    background-color:var(--bg-hero-footer);
+    padding: 60px 0;
+
+    &__box {
+        align-items: baseline;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @media screen and (min-width: 1200px){
+            display: flex;
+            align-items: baseline;
+        }
+    }
+    &__logo {
+        text-decoration: none;
+        color:var(--main-color);
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.192;
+        letter-spacing: 0.03em;
+    }
+ }
+ .footer-logo-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #fff;
+ }
