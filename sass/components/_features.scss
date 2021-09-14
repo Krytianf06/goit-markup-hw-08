@@ -1,7 +1,8 @@
 .section-title.hidden {
     display: none;
- }
- .features {
+}
+
+.features {
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -28,10 +29,9 @@
         letter-spacing: 0.03em;
         color: var(--second-text-color);
     }
-    
-    }
+}
 
- .features__item {
+.features__item {
     margin-bottom: 30px;
 
     &:last-child {
@@ -45,8 +45,9 @@
         flex-basis: calc((100% - 120px) / 4);
         margin-left: 30px;
     }
- }    
- .features__icon {
+}    
+
+.features__icon {
     display: flex;
     padding: 25px 0;
     justify-content: center;
@@ -54,4 +55,11 @@
     margin-bottom: 30px;
     border-radius: var(--border-radius);
     background-color: var(--bg-team-filter);
- }
+}
+
+.features__icon:hover
+.features__icon:focus {
+    color: var(--special-color);
+    background-color: aqua;
+    fill: red;
+}

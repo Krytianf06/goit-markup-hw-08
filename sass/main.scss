@@ -2,14 +2,9 @@
 @import './utils/vars';
 @import './base/common.scss';
 @import './layout/header';
-
 @import './components/mobile-menu';
 @import './components/hero';
-@import './components/modalWindow./backdrop';
-
-@import './components/modalWindow./modal';
-@import './components/modalWindow./modalbuttons';
-@import './components/modalWindow./fieldOrderModal';
+@import './components/modalWindow/modalWindows';
 @import './components/features';
 @import './components/whatwedo';
 @import './components/ourteam';
