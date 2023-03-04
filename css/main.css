@@ -1202,7 +1202,7 @@ p {
   transition: border-color var(--transition-duration) var(--timing-function);
 }
 .clients__link:hover, .clients__link:focus {
-  border: 1px solid var(--special-color);
+  border: 5px solid var(--special-color);
 }
 
 .clients__link:hover .clients__icon {
